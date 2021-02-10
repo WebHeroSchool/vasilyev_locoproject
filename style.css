@@ -1,7 +1,274 @@
+body {
+  position: relative;
+  width: 1440px;
+  height: 2700px;
+}
 .header__logo {
+  position: absolute;
+  width: 98px;
+  height: 37px;
+  left: 52px;
+  top: 36px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
   line-height: 37px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+}
+
+.header__lang-ru {
+  position: absolute;
+  width: 31px;
+  height: 25px;
+  left: 388px;
+  top: 42px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+.header__lang-selector {
+  position: absolute;
+  width: 11px;
+  height: 5.5px;
+  left: 426px;
+  top: 54px;
+  background-image: url(./langselector.png);
+  background-position: center center;
+}
+
+.header__menu {
+  position: absolute;
+  width: 92px;
+  height: 92px;
+  left: 1348px;
+  top: 0px;
+  background: #000000;
+  opacity: 0.05;
+}
+
+.menu__line1 {
+  position: absolute;
+  width: 34.7px;
+  height: 3.48px;
+  left: 1376.25px;
+  top: 39.54px;
+  background-image: url(./menuline1.png);
+  background-position: center center;
+}
+
+.menu__line2 {
+  position: absolute;
+  width: 34.7px;
+  height: 3.48px;
+  left: 1376.25px;
+  top: 48.98px;
+  background-image: url(./menuline2.png);
+  background-position: center center;
+}
+
+.section1__black-background {
+  position: absolute;
+  width: 461px;
+  height: 900px;
+  left: 0px;
+  top: 0px;
+  background: #000000;
+  z-index: -1;
+}
+.section__img-firstpage {
+  position: absolute;
+  width: 549px;
+  height: 562px;
+  left: 186px;
+  top: 169px;
+}
+
+.section__title {
+  position: absolute;
+  width: 475px;
+  height: 164px;
+  left: 789px;
+  top: 263px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 82px;
+  color: #000000;
+}
+
+.section__content {
+  position: absolute;
+  width: 467px;
+  height: 127px;
+  left: 789px;
+  top: 453px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.section__button-next {
+  position: absolute;
+  width: 203px;
+  height: 44px;
+  left: 786px;
+  top: 616px;
+  border: 1.5px solid #000000;
+  box-sizing: border-box;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 0px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.section__button-other {
+  position: absolute;
+  width: 172px;
+  height: 44px;
+  left: 1043px;
+  top: 616px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 0px;
+  color: #000000;
+  border: none;
+  background-color: #FFFFFF;
+  padding: 0;
+}
+
+.section__button-arrow {
+  position: absolute;
+  width: 43px;
+  height: 10px;
+  left: 1237px;
+  top: 634px;
+  background-image: url(./arrowother.png);
+  background-position: center center;
+}
+
+.scroll__item-big {
+  position: absolute;
+  width: 27px;
+  height: 46px;
+  left: 707px;
+  top: 815px;
+  background-image: url(./scrollbig.png);
+  background-position: center center;
+}
+
+.scroll__item-small {
+  position: absolute;
+  width: 2.45px;
+  height: 8.21px;
+  left: 719.27px;
+  top: 826.5px;
+  background-image: url(./scrollsmall.png);
+  background-position: center center;
+}
+
+.social-instagram__item_back {
+  position: absolute;
+  width: 42.98px;
+  height: 43px;
+  left: 52px;
+  top: 816px;
+  background-image: url(./Ellipseinsta.png);
+  background-position: center center;
+}
+
+.social-instagram__item_big {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 64px;
+  top: 829px;
+  background-image: url(./instabig.png);
+  background-position: center center;
+}
+
+.social-instagram__item_small {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  left: 68.5px;
+  top: 833.5px;
+  background-image: url(./instasmall.png);
+  background-position: center center;
+}
+
+.social-instagram__item_dot {
+  position: absolute;
+  width: 1.2px;
+  height: 1.2px;
+  left: 77.5px;
+  top: 842px;
+  background-image: url(./instadot.png);
+  background-position: center center;
+}
+
+.social-vk__item_back {
+  position: absolute;
+  width: 42.98px;
+  height: 43px;
+  left: 107.01px;
+  top: 816px;
+  background-image: url(./Ellipsevk.png);
+  background-position: center center;
+}
+
+.social-vk__item_main {
+  position: absolute;
+  width: 20px;
+  height: 11px;
+  left: 118px;
+  top: 832px;
+  background-image: url(./vk.png);
+  background-position: center center;
+}
+
+.social-fb__item_back {
+  position: absolute;
+  width: 42.98px;
+  height: 43px;
+  left: 162.02px;
+  top: 816px;
+  background-image: url(./Ellipsefb.png);
+  background-position: center center;
+}
+
+.social-fb__item_main {
+  position: absolute;
+  width: 8px;
+  height: 16px;
+  left: 179px;
+  top: 829px;
+  background-image: url(./fb.png);
+  background-position: center center;
+}
+
+.section_leather-clutch {
+  position: absolute;
+  top: 2000px;
+}
+
+.section_serene-total-look {
+  position: absolute;
+  top: 2000px;
 }
