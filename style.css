@@ -2,7 +2,13 @@ body {
   position: relative;
   width: 1440px;
   height: 2700px;
+  margin: 0;
 }
+
+.header__logo-wrap {
+  display: none;
+}
+
 .header__logo {
   position: absolute;
   width: 98px;
@@ -89,6 +95,7 @@ body {
   height: 562px;
   left: 186px;
   top: 169px;
+  background-image: url(./pete-bellis-432867-unsplash.png);
 }
 
 .section__title {
@@ -263,12 +270,86 @@ body {
   background-position: center center;
 }
 
-.section_leather-clutch {
-  position: absolute;
-  top: 2000px;
+@media all and (max-width: 375px) {
+  .header__lang-ru, .header__lang-selector, .section1__black-background, .section__content, .section__button-next, .section__button-other, .section__socials, .section__scroll {
+    display: none;
+  }
+
+  .section__img-firstpage {
+    width: 375px;
+    height: 583px;
+    left: -1px;
+    top: 16px;
+    background-image: url(./pete-bellis-mobile.png);
+    z-index: -5;
+  }
+
+  .header__menu {
+    position: absolute;
+    width: 70px;
+    height: 69px;
+    left: 305px;
+    background: #EDEDED;
+    opacity: 1;
+  }
+
+  .menu__line1 {
+    width: 26.4px;
+    height: 2.61px;
+    left: 326.49px;
+    top: 30.66px;
+  }
+
+  .menu__line2 {
+    width: 26.4px;
+    height: 2.61px;
+    left: 326.49px;
+    top: 37.73px;
+  }
+
+  .section__title {
+    width: 297px;
+    height: 103px;
+    left: 26px;
+    top: 430px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 51px;
+  }
+  .header__logo {
+    width: 98px;
+    height: 37px;
+    left: 26px;
+    top: 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #000000;
+  }
+
+  .header__logo-wrap {
+    display: block;
+    position: absolute;
+    width: 317px;
+    height: 69px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+  }
+
+  .section__button-arrow {
+    background-image: url(./vector-mobile1.png);
+    width: 28px;
+    height: 14px;
+    left: 175px;
+    top: 562px;
+  }
 }
 
-.section_serene-total-look {
-  position: absolute;
-  top: 2000px;
+.section_leather-clutch, .section_serene-total-look, .footer {
+  display: none;
 }
