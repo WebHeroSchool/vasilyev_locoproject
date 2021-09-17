@@ -1,355 +1,207 @@
 body {
-  position: relative;
-  width: 1440px;
-  height: 2700px;
   margin: 0;
 }
 
-.header__logo-wrap {
-  display: none;
+.wrapper_black {
+  width: 100%;
+  height: 900px;
+  background: #000000;
+  background: -moz-linear-gradient(left,  #000000 32%, #ffffff 32%);
+  background: -webkit-linear-gradient(left,  #000000 32%,#ffffff 32%);
+  background: linear-gradient(to right,  #000000 32%,#ffffff 32%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff',GradientType=1 );
+}
+
+.header {
+  display: flex;
 }
 
 .header__logo {
-  position: absolute;
-  width: 98px;
-  height: 37px;
-  left: 52px;
-  top: 36px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 37px;
-  text-align: center;
-  letter-spacing: 0.07em;
+  position: relative;
+  font: 500 30px/37px Montserrat, arial, helvetica, sans-serif;
   color: #FFFFFF;
+  letter-spacing: 0.07em;
+  margin: 36px 0 96px 52px;
 }
 
-.header__lang-ru {
-  position: absolute;
-  width: 31px;
-  height: 25px;
-  left: 388px;
-  top: 42px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: right;
+.header__lang_ru {
+  position: relative;
+  font: 500 20px/24px Montserrat, arial, helvetica, sans-serif;
   color: #FFFFFF;
+  margin: 42px 0 0 16.6%;
 }
 
 .header__lang-selector {
-  position: absolute;
-  width: 11px;
-  height: 5.5px;
-  left: 426px;
-  top: 54px;
-  background-image: url(./langselector.png);
-  background-position: center center;
+  width: 6px;
+  height: 6px;
+  position: relative;
+  border-right: 2px solid #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+  transform: rotate(45deg);
+  margin: 51px 0 0 .57%;
 }
 
-.header__menu {
+#menu__toggle {
+  display: none;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+  top: 5px;
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu {
+  visibility: visible;
+  left: 0;
+}
+
+.menu__btn {
+  display: flex;
   position: absolute;
+  right: 0;
   width: 92px;
   height: 92px;
-  left: 1348px;
-  top: 0px;
-  background: #000000;
-  opacity: 0.05;
+  cursor: pointer;
+  z-index: 2;
+  background: #d4d4d4;
 }
 
-.menu__line1 {
+.menu__btn > span,
+.menu__btn > span::after {
+  display: block;
   position: absolute;
-  width: 34.7px;
-  height: 3.48px;
-  left: 1376.25px;
-  top: 39.54px;
-  background-image: url(./menuline1.png);
-  background-position: center center;
+  width: 35px;
+  height: 4px;
+  margin: 43% 0 0 30%;
+  background-color: #000000;
+  transition-duration: .25s;
 }
 
-.menu__line2 {
-  position: absolute;
-  width: 34.7px;
-  height: 3.48px;
-  left: 1376.25px;
-  top: 48.98px;
-  background-image: url(./menuline2.png);
-  background-position: center center;
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+  margin: 0 0 0 0;
 }
 
-.section1__black-background {
-  position: absolute;
-  width: 461px;
-  height: 900px;
-  left: 0px;
-  top: 0px;
-  background: #000000;
+.menu {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 175px 0 0 0;
+  text-align: center;
+  list-style: none;
+  z-index: 1;
+  background-color: #FAE8E4;
+  transition-duration: .25s;
+}
+
+.section_new-collection {
+  margin: 0 0 84px 13%;
+  padding: 0 0 71px 41.8%;
+  background: top left no-repeat url(img/Newcollection.png);
   z-index: -1;
 }
-.section__img-firstpage {
-  position: absolute;
-  width: 549px;
-  height: 562px;
-  left: 186px;
-  top: 169px;
-  background-image: url(./pete-bellis-432867-unsplash.png);
+
+.section_new-collection__title {
+  padding-top: 102px;
+  margin: 0 0 17px 0;
+  font: 700 80px/82px Montserrat, arial, helvetica, sans-serif;
 }
 
-.section__title {
-  position: absolute;
-  width: 475px;
-  height: 164px;
-  left: 789px;
-  top: 263px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 80px;
-  line-height: 82px;
+.section_new-collection__content {
+  padding-right: 20%;
+  margin: 0 11% 36px 0;
+  font: 400 15px/21px Montserrat, arial, helvetica, sans-serif;
+}
+
+.section__button_next {
+  display: inline-block;
+  margin-top: 2px;
+  padding: 12px 38px 12px 36px;
+  font: 500 13px Montserrat, arial, helvetica, sans-serif;
   color: #000000;
-}
-
-.section__content {
-  position: absolute;
-  width: 467px;
-  height: 127px;
-  left: 789px;
-  top: 453px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 21px;
-  color: #000000;
-}
-
-.section__button-next {
-  position: absolute;
-  width: 203px;
-  height: 44px;
-  left: 786px;
-  top: 616px;
+  text-decoration: none;
   border: 1.5px solid #000000;
-  box-sizing: border-box;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 0px;
-  color: #000000;
-  background-color: #FFFFFF;
+  cursor: pointer;
 }
 
-.section__button-other {
-  position: absolute;
-  width: 172px;
-  height: 44px;
-  left: 1043px;
-  top: 616px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 0px;
+.section__button_other {
+  display: inline-block;
+  padding: 0 0 12px 52px;
+  font: 500 13px Montserrat, arial, helvetica, sans-serif;
   color: #000000;
-  border: none;
-  background-color: #FFFFFF;
-  padding: 0;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.section__button-arrow {
-  position: absolute;
+.section__button_other::after {
+  content: url(img/Vector2.1.svg);
+  display: inline-block;
+  width: 45px;
+  margin-left: 17px;
+  transform: translateY(1px);
+}
+
+.footer__socials {
+  padding: 2px 0 0 3.6%;
+}
+
+.footer__socials > div {
+  display: inline-block;
   width: 43px;
-  height: 10px;
-  left: 1237px;
-  top: 634px;
-  background-image: url(./arrowother.png);
-  background-position: center center;
+  height: 43px;
+  margin-right: 8px;
 }
 
-.scroll__item-big {
+.footer__socials > div:last-child {
+  margin-right: 0;
+}
+
+.footer__instagram {
+  background-image: url(img/INST.svg);
+}
+
+.footer__vk {
+  background-image: url(img/VK.svg);
+}
+
+.footer__fb {
+  background-image: url(img/FB.svg);
+}
+
+.footer__scroll {
+  display: inline-block;
   position: absolute;
+  top: 815px;
+  left: 49.1%;
   width: 27px;
   height: 46px;
-  left: 707px;
-  top: 815px;
-  background-image: url(./scrollbig.png);
-  background-position: center center;
 }
 
-.scroll__item-small {
+.scroll__big {
+  background-image: url(img/Scrooll.svg);
+  width: 27px;
+  height: 46px;
+}
+
+.scroll__small {
+  background-image: url(img/Scrooll1.svg);
   position: absolute;
-  width: 2.45px;
-  height: 8.21px;
-  left: 719.27px;
-  top: 826.5px;
-  background-image: url(./scrollsmall.png);
-  background-position: center center;
-}
-
-.social-instagram__item_back {
-  position: absolute;
-  width: 42.98px;
-  height: 43px;
-  left: 52px;
-  top: 816px;
-  background-image: url(./Ellipseinsta.png);
-  background-position: center center;
-}
-
-.social-instagram__item_big {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  left: 64px;
-  top: 829px;
-  background-image: url(./instabig.png);
-  background-position: center center;
-}
-
-.social-instagram__item_small {
-  position: absolute;
-  width: 9px;
-  height: 9px;
-  left: 68.5px;
-  top: 833.5px;
-  background-image: url(./instasmall.png);
-  background-position: center center;
-}
-
-.social-instagram__item_dot {
-  position: absolute;
-  width: 1.2px;
-  height: 1.2px;
-  left: 77.5px;
-  top: 842px;
-  background-image: url(./instadot.png);
-  background-position: center center;
-}
-
-.social-vk__item_back {
-  position: absolute;
-  width: 42.98px;
-  height: 43px;
-  left: 107.01px;
-  top: 816px;
-  background-image: url(./Ellipsevk.png);
-  background-position: center center;
-}
-
-.social-vk__item_main {
-  position: absolute;
-  width: 20px;
-  height: 11px;
-  left: 118px;
-  top: 832px;
-  background-image: url(./vk.png);
-  background-position: center center;
-}
-
-.social-fb__item_back {
-  position: absolute;
-  width: 42.98px;
-  height: 43px;
-  left: 162.02px;
-  top: 816px;
-  background-image: url(./Ellipsefb.png);
-  background-position: center center;
-}
-
-.social-fb__item_main {
-  position: absolute;
-  width: 8px;
-  height: 16px;
-  left: 179px;
-  top: 829px;
-  background-image: url(./fb.png);
-  background-position: center center;
-}
-
-@media all and (max-width: 375px) {
-  .header__lang-ru, .header__lang-selector, .section1__black-background, .section__content, .section__button-next, .section__button-other, .section__socials, .section__scroll {
-    display: none;
-  }
-
-  .section__img-firstpage {
-    width: 375px;
-    height: 583px;
-    left: -1px;
-    top: 16px;
-    background-image: url(./pete-bellis-mobile.png);
-    z-index: -5;
-  }
-
-  .header__menu {
-    position: absolute;
-    width: 70px;
-    height: 69px;
-    left: 305px;
-    background: #EDEDED;
-    opacity: 1;
-  }
-
-  .menu__line1 {
-    width: 26.4px;
-    height: 2.61px;
-    left: 326.49px;
-    top: 30.66px;
-  }
-
-  .menu__line2 {
-    width: 26.4px;
-    height: 2.61px;
-    left: 326.49px;
-    top: 37.73px;
-  }
-
-  .section__title {
-    width: 297px;
-    height: 103px;
-    left: 26px;
-    top: 430px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 50px;
-    line-height: 51px;
-  }
-  .header__logo {
-    width: 98px;
-    height: 37px;
-    left: 26px;
-    top: 15px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 37px;
-    text-align: center;
-    letter-spacing: 0.07em;
-    color: #000000;
-  }
-
-  .header__logo-wrap {
-    display: block;
-    position: absolute;
-    width: 317px;
-    height: 69px;
-    left: 0px;
-    top: 0px;
-    background: #FFFFFF;
-  }
-
-  .section__button-arrow {
-    background-image: url(./vector-mobile1.png);
-    width: 28px;
-    height: 14px;
-    left: 175px;
-    top: 562px;
-  }
-}
-
-.section_leather-clutch, .section_serene-total-look, .footer {
-  display: none;
+  left: 45.4%;
+  top: 11.5px;
+  width: 2.5px;
+  height: 8px;
 }
