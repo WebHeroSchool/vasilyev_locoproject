@@ -339,17 +339,17 @@ body {
 }
 
 .aside_leather-clutch::before {
+  content: url(img/clutch2.1.svg);
+  position: absolute;
+  top: 934px;
+  left: 16%;
+}
+
+.section_leather-clutch::before {
   content: url(img/clutch2.2.svg);
   position: absolute;
   top: 1112px;
   left: 9.5%;
-}
-
-.section_leather-clutch::before {
-  content: url(img/clutch2.1.svg);
-  position: absolute;
-  top: 932px;
-  left: 16%;
 }
 
 .wrapper_beige {
@@ -458,7 +458,176 @@ body {
   background: center right no-repeat url(img/Webhero.svg);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 1390px) {
+  .aside_serene {
+    width: 200px;
+    height: auto;
+    margin: 0 0 190px 75%;
+  }
+
+  .footer_serene {
+    margin-left: 80%;
+  }
+}
+
+@media (max-width: 1325px) {
+  .header__lang_ru {
+    margin: 42px 0 0 7%;
+  }
+
+  .section_new-collection {
+    margin: 0 0 84px 8%;
+    padding: 0 0 51px 50%;
+  }
+}
+
+@media (max-width: 1270px) {
+  .section_new-collection {
+    background-size: 40%;
+  }
+
+  .section_new-collection {
+    margin: 0 0 84px 8%;
+    padding: 0 0 51px 40%;
+  }
+
+  .aside_leather-clutch::before {
+    content: url(img/clutch2.1.png);
+    left: 8%;
+  }
+
+  .section_leather-clutch::before {
+    content: url(img/clutch2.2.png);
+    left: 4.6%;
+  }
+
+  .section_leather-clutch {
+    display: inline-block;
+    width: 488px;
+    height: 556px;
+    background: #FFFFFF;
+    margin: 150px 0 0 50%;
+    box-shadow: 10px 15px 50px -30px #000000;
+  }
+
+  .aside_leather-clutch {
+    margin-left: 50%;
+    padding-top: 39px;
+    font: 500 13px/16px Montserrat, arial, helvetica, sans-serif;
+  }
+
+  .wrapper_beige::after {
+    content: url(img/SereneSmall.png);
+  }
+
+  .section_serene {
+    margin: 200px 0 0 50%;
+  }
+
+  .footer_serene {
+    margin-left: 75%;
+    padding: 50px 0 6px 0;
+    background: bottom right no-repeat url(img/Webhero.svg);
+  }
+}
+
+@media (max-width: 990px) {
+  .section_new-collection {
+    margin: 0 0 250px 3%;
+    padding: 0 0 51px 45%;
+  }
+
+  .section_new-collection__title {
+    padding-top: 0;
+    font: 700 52px/56px Montserrat, arial, helvetica, sans-serif;
+  }
+
+  .section__button_other {
+    padding: 0 0 12px 5px;
+  }
+
+  .section__button_other::after {
+    margin-left: 3px;
+  }
+
+  .section__button_next {
+    padding: 12px 28px 12px 26px;
+  }
+
+  .section_new-collection__content {
+    padding-right: 0;
+  }
+
+  .section_leather-clutch {
+    width: 330px;
+    margin: 168px 0 0 55%;
+  }
+
+  .section_leather-clutch__title {
+    margin: 0 0 5px 0;
+    padding-top: 25px;
+    font: 700 28px/30px Montserrat, arial, helvetica, sans-serif;
+  }
+
+  .section_leather-clutch__subtitle {
+    margin: 0 0 20px 0;
+    font: 700 10px/10px Montserrat, arial, helvetica, sans-serif;
+  }
+
+  .section_leather-clutch__content {
+    margin: 0 0 10px 0;
+    font: 400 15px/21px Montserrat, arial, helvetica, sans-serif;
+  }
+
+  .section_leather-clutch__colors {
+    padding-top: 0;
+    margin-bottom: 20px;
+    height: 38px;
+  }
+
+  .section_leather-clutch__price {
+    margin-left: 0;
+    font: 700 20px/26px Montserrat, arial, helvetica, sans-serif;
+  }
+
+  .section_leather-clutch__amount {
+    font: 500 15px Montserrat, arial, helvetica, sans-serif;
+    border: 1.5px solid #000000;
+    padding: 10px 17px 12px 17px;
+  }
+
+  .section_leather-clutch__addtocart {
+    padding: 12px 30px 13px 30px;
+    margin-top: 20px;
+  }
+
+  .aside_leather-clutch::after {
+    content: url(img/Vector2.1.svg);
+  }
+
+  .section_serene {
+    width: 320px;
+    height: 450px;
+    margin: 130px 0 0 56.7%;
+  }
+
+  .aside_serene {
+    margin: 0 0 202px 56.7%;
+  }
+
+  .footer_serene {
+    margin-left: 70%;
+    padding: 0 0 6px 0;
+    background: bottom right no-repeat url(img/Webhero.svg);
+  }
+
+  .section_serene__addtocart {
+    padding: 6px 30px 6px 30px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
   .wrapper_black {
     height: 597px;
     background: #ffffff;
@@ -517,13 +686,14 @@ body {
     padding: 0 0 0 0;
     width: 100%;
     height: 528px;
-    background: top left no-repeat url(img/NewcollectionMobile.png);
+    background: top center no-repeat url(img/NewcollectionMobile.png);
     z-index: -1;
   }
 
   .section_new-collection__title {
     padding-top: 364px;
-    margin: 0 0 0 7%;
+    width: 50%;
+    margin: 0 0 0 28%;
     font: 700 50px/51px Montserrat, arial, helvetica, sans-serif;
   }
 
@@ -564,10 +734,10 @@ body {
 
   .section_leather-clutch {
     display: inline-block;
-    width: 85.3%;
+    width: 48%;
     height: 281px;
     background: #FFFFFF;
-    margin: 263px 0 0 7.7%;
+    margin: 263px 0 0 27%;
     box-shadow: 6px 10px 30px -20px #000000;
   }
 
@@ -633,6 +803,7 @@ body {
     font: 500 13px Montserrat, arial, helvetica, sans-serif;
     border: 1.5px solid #000000;
     margin-left: 2px;
+    margin-top: 0;
     padding: 8px 47px 10px 47px;
   }
 
@@ -644,7 +815,7 @@ body {
     content: url(img/clutch2.1Mob.png);
     position: absolute;
     top: 543px;
-    left: 20.1%;
+    left: 33%;
     width: 59.7%;
     height: 326px;
   }
@@ -662,9 +833,9 @@ body {
   }
 
   .section_serene {
-    width: 81.3%;
+    width: 48%;
     height: 195px;
-    margin: 274px 0 0 11.7%;
+    margin: 274px 0 0 27%;
     z-index: 1;
   }
 
@@ -698,6 +869,7 @@ body {
 
   .section_serene__addtocart {
     margin-left: 0;
+    margin-top: 0;
     padding: 9px 47px 9px 47px;
   }
 
@@ -705,7 +877,7 @@ body {
     content: url(img/SereneMob.png);
     position: absolute;
     top: 1227px;
-    left: 3.5%;
+    left: 27%;
   }
 
   .aside_serene {
@@ -723,5 +895,125 @@ body {
 
   .footer_serene {
     display: none;
+  }
+}
+
+@media (max-width: 670px) {
+  .section_leather-clutch__price {
+    margin-left: 5px;
+  }
+
+  .section_leather-clutch__addtocart {
+    padding: 8px 10px 10px 10px;
+  }
+
+  .section_leather-clutch::before {
+    left: 27%;
+  }
+
+  .section_serene__addtocart {
+    padding: 9px 10px 9px 10px;
+  }
+
+  .wrapper_beige::after {
+    left: 18%;
+  }
+}
+
+@media (max-width: 540px) {
+  .section_new-collection__title {
+    margin: 0 0 0 20%;
+  }
+
+  .section_leather-clutch {
+    width: 65%;
+    margin: 263px 0 0 20%;
+  }
+
+  .section_leather-clutch::before {
+    left: 25%;
+  }
+
+  .section_serene {
+    width: 65%;
+    margin: 274px 0 0 20%;
+  }
+
+  .wrapper_beige::after {
+    left: 15%;
+  }
+}
+
+@media (max-width: 400px) {
+  .section_new-collection__title {
+    margin: 0 0 0 15%;
+  }
+
+  .section_leather-clutch {
+    width: 70%;
+    margin: 263px 0 0 17%;
+  }
+
+  .section_leather-clutch::before {
+    left: 23%;
+  }
+
+  .section_serene {
+    width: 70%;
+    margin: 274px 0 0 17%;
+  }
+
+  .wrapper_beige::after {
+    left: 5%;
+  }
+}
+
+@media (max-width: 375px) {
+  .section_new-collection__title {
+    margin: 0 0 0 7%;
+    width: 100%;
+  }
+
+  .section_new-collection__title::after {
+    content: url(img/VectorNCM.svg);
+    display: block;
+    margin-left: 38.9%;
+  }
+
+  .section_leather-clutch {
+    width: 85.3%;
+    margin: 263px 0 0 7.7%;
+  }
+
+  .section_leather-clutch__price {
+    margin-left: 47px;
+  }
+
+  .section_leather-clutch__addtocart {
+    padding: 8px 47px 10px 47px;
+  }
+
+  .section_leather-clutch::before {
+    left: 20.1%;
+  }
+
+  .section_serene {
+    width: 81.3%;
+    margin: 274px 0 0 11.7%;
+  }
+
+  .section_serene__addtocart {
+    padding: 9px 47px 9px 47px;
+  }
+
+  .wrapper_beige::after {
+    left: 3.5%;
+  }
+
+  .aside_serene {
+    margin: 0 0 0 50.1%;
+    width: 150px;
+    padding-top: 38px;
+    font: 500 15px/18px Montserrat, arial, helvetica, sans-serif;
   }
 }
