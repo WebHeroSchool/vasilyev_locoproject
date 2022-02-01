@@ -1,83 +1,134 @@
 <!DOCTYPE html>
 <html>
   <head>
-	  <title>Журнал Дилетант</title>
-		<link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Pacifico&display=swap" rel="stylesheet">
+	  <title>LOCO</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fonts.css">
   </head>
   <body>
-	  <header class="header">
-	    <small class="header__item">2</small>
-	    <small class="header__item">КАДР</small>
-      <div class="header__wrap">
-        <h1 class="header__wrap-title">
-          Тема дня
+    <div class="wrapper_black">
+	    <header class="header">
+	      <div class="header__logo">
+          LOCO
+        </div>
+        <div class="header__lang_ru">
+          RU
+        </div>
+        <div class="header__lang-selector">
+        </div>
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <ul class="menu">
+            <li><a href="#" class="menu__item"></a></li>
+            <li><a href="#" class="menu__item menu__item_active"></a></li>
+            <li><a href="#" class="menu__item"></a></li>
+            <li><a href="#" class="menu__item"></a></li>
+            <li><a href="#" class="menu__item"></a></li>
+          </ul>
+        </div>
+      </header>
+	    <section class="section section_new-collection">
+		    <h1 class="section_new-collection__title">
+          Новая коллекция
         </h1>
-        <button class="header__wrap-button">
-          Подробнее о рубрике
-        </button>
+        <p class="section_new-collection__content">
+          Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.
+        </p>
+        <a class="section__button_next">
+          ЧИТАТЬ ДАЛЬШЕ
+        </a>
+        <a class="section__button_other">
+          ДРУГИЕ ПРЕДЛОЖЕНИЯ
+        </a>
+      </section>
+      <footer class="footer footer_new-collection">
+        <div class="footer_new-collection__socials">
+          <div class="footer_new-collection__instagram">
+          </div>
+          <div class="footer_new-collection__vk">
+          </div>
+          <div class="footer_new-collection__fb">
+          </div>
+        </div>
+        <div class="footer_new-collection__scroll">
+          <div class="scroll__big">
+          </div>
+          <div class="scroll__small">
+          </div>
+        </div>
+	    </footer>
+    </div>
+    <div class="wrapper_pink">
+      <section class="section section_leather-clutch">
+        <div class="wrap wrap_leather-clutch">
+          <h1 class="section_leather-clutch__title">
+            Кожаный клатч
+          </h1>
+          <h3 class="section_leather-clutch__subtitle">
+            ОСЕННЯЯ КОЛЛЕКЦИЯ
+          </h3>
+          <p class="section_leather-clutch__content">
+            Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.
+          </p>
+          <div class="section_leather-clutch__colors">
+            <a class="section_leather-clutch__colors_white">
+            </a>
+            <a class="section_leather-clutch__colors_pink">
+            </a>
+            <a class="section_leather-clutch__colors_blue">
+            </a>
+            <a class="section_leather-clutch__colors_green">
+            </a>
+          </div>
+          <a class="section_leather-clutch__price">
+            1990₽
+          </a>
+          <div class="section_leather-clutch__amount">
+            1
+          </div>
+          <a class="section_leather-clutch__addtocart">
+            ДОБАВИТЬ В КОРЗИНУ
+          </a>
+        </div>
+      </section>
+      <aside class="aside aside_leather-clutch">
+        ДРУГИЕ ТОВАРЫ НА LOCO.COM
+      </aside>
+    </div>
+    <div class="wrapper_beige">
+      <div class="blackline">
       </div>
-    </header>
-		<address class="address">
-      Рубрику ведет Андрей Позняков
-    </address>
-    <nav class="menu">
-      <a href='#' class="menu__link">Главная</a>
-      <a href='#' class="menu__link">Подробнее</a>
-      <a href='#' class="menu__link">Контакты</a>
-      <a href='#' download title="При нажатии произойдет загрузка страницы журнала с сервера" class="menu__link">Скачать в PDF</a>
-    </nav>
-	  <section class="section">
-		  <article class="section__article">
-			  <h1 class="section__article-title">
-				  Республиканцы<br>
-				  за конной баррикадой
-			  </h1>
-			  <p class="section__article-subtitle" id="section__article-subtitle">
-				  Барселона, Испания, июль 1936 года
-			  </p>
-        <button class="section__article-button">
-          Прочитать об Испании больше
-        </button>
-			  <main class="section__article-maincontent" contenteditable="true" spellcheck="true">
-					<b>Г</b>
-						ражданская война в Испании, как известно, началась<br>
-						с серии вооруженных мятежей против республиканского<br>
-						правительства. Выступления путчистов в июле 1936 года<br>
-						охватили многие города страны, но далеко не везде им<br>
-						удалось закрепиться. Барселона тогда оказалась одним<br>
-						из оплотов республиканского сопротивления.<br>
-						Эту фотографию относят к самому началу боевых действий в сто-<br>
-						лице Каталонии. 20 июля солдаты под предводительством генерала<br>
-						Годеда захватили центр города. С окраин сразу стали стягиваться<br>
-						отряды сторонников республики - рабочие захватили военные<br>
-						склады, вооружились и фактически осадили центр города. Весь день<br>
-						на улицах шли бои, а к вечеру Годед был вынужден вернуть войска<br>
-						в казармы. Мятежного генерала затем захватили в плен и судили.<br>
-						Промышленная Каталония осталась верна Республике.<br>
-						Известный каталонский фотограф Агусти Сентеллес оставил<br>
-						множество свидетельств об этом этапе гражданской войны. Фото-<br>
-						графия "конной баррикады" считается одним из символов проти-<br>
-						востояния республиканцев. Она была сделана в первые часы после<br>
-						начала боев - так, во всяком случае, писали местные СМИ в 75-лет-<br>
-            нюю годовщину восстания. Один из трех бойцов с ружьями - офи-<br>
-						цер полиции Мариано Витини. В 2011 году потомки Сентеллеса<br>
-					  торжественно передали фотографию его дочери и внукам. Как сооб-<br>
-						щает англоязычная The Olive Press, Витини пережил гражданскую<br>
-						войну, эмигрировал, воевал с нацистами во Франции и вернулся<br>
-					  на родину после освобождения Парижа в 1944 году. В Испании<br>
-					  он участвовал в покушении на делегацию фашистов в Мадриде,<br>
-					  за что был арестован и впоследствии казнен.
-				 </main>
-		  </article>
-	  </section>
-	  <footer class="footer">
-      <h1 class="footer__quote">
-        Как <cite>Карлос Руис Сафон</cite> сказал в своей книге  — <q>Барселона — колдунья, понимаете, Даниель? Она проникает тебе под кожу и завладевает твоей душой, а ты этого даже не замечаешь.</q>
-      </h1>
-      <button class="footer__button">
-        Источник цитаты
-      </button>
-	  </footer>
+      <section class="section section_serene">
+        <div class="wrap wrap_serene">
+          <h1 class="section_serene__title">
+            Serene Total Look
+          </h1>
+          <h3 class="section_serene__subtitle">
+            ОСЕННЯЯ КОЛЛЕКЦИЯ
+          </h3>
+          <p class="section_serene__content">
+            Джинсы, свитер, обувь.<br>
+            В комплект также входит пакет ароматного чая и кружка.
+          </p>
+          <div class="section_serene__amount">
+            1
+          </div>
+          <div class="section_serene__addtocart">
+            ДОБАВИТЬ В КОРЗИНУ
+          </div>
+        </div>
+      </section>
+      <aside class="aside aside_serene">
+        ДРУГИЕ ТОВАРЫ НА LOCO.COM
+      </aside>
+      <footer class="footer_serene">
+        РАЗРАБОТАНО В
+      <footer>
+    </div>
   </body>
 </html>
